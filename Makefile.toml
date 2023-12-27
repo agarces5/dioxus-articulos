@@ -1,0 +1,8 @@
+[tasks.run-dev-desktop]
+command = "dx"
+args = ["serve", "--hot-reload", "--platform", "desktop"]
+
+[tasks.tailwind-watch]
+command = "bun"
+args = ["tailwindcss", "-i", "./input.css", "-o", "./public/tailwind.css", "--watch"]
+

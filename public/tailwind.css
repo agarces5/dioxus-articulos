@@ -543,3 +543,27 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+.flex {
+  display: flex;
+}
+
+.w-4\/5 {
+  width: 80%;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-self-center {
+  justify-self: center;
+}
+
+.p-4 {
+  padding: 1rem;
+}
