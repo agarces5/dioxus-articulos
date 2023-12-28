@@ -1,8 +1,15 @@
-[tasks.run-dev-desktop]
+[tasks.dx-run-desktop]
 command = "dx"
-args = ["serve", "--hot-reload", "--platform", "desktop"]
+args = ["serve", "--platform", "desktop"]
 
-[tasks.tailwind-watch]
+[tasks.tailwind-build]
 command = "bun"
-args = ["tailwindcss", "-i", "./input.css", "-o", "./public/tailwind.css", "--watch"]
+args = ["tailwindcss", "-i", "./input.css", "-o", "./public/tailwind.css"]
+
+[tasks.cargo-run]
+command = "cargo"
+args = ["run"]
+
+[tasks.run]
+dependencies = ["tailwind-build", "cargo-run"]
 
