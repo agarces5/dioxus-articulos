@@ -31,6 +31,9 @@ impl Detalle {
     pub fn precios(&self) -> &[Precio] {
         &self.precios
     }
+    pub fn precios_mut(&mut self) -> &mut Vec<Precio> {
+        &mut self.precios
+    }
     /// Sets the precios of this [`Detalle`].
     pub fn set_precios(&mut self, precios: &[Precio]) {
         self.precios = precios.to_owned()

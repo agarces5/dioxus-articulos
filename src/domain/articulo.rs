@@ -54,6 +54,9 @@ impl Articulo {
     pub fn detalles(&self) -> &[Detalle] {
         &self.detalles
     }
+    pub fn detalles_mut(&mut self) -> &mut Vec<Detalle> {
+        &mut self.detalles
+    }
     /// Sets the detalles of this [`Articulo`].
     pub fn set_detalles(&mut self, detalles: &[Detalle]) {
         self.detalles = detalles.to_owned()
